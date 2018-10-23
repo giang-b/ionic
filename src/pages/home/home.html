@@ -33,8 +33,44 @@
   </ion-scroll> -->
 
   <!-- <ion-grid> -->
-    <div class='container' dragula="COPYABLE" id="left" style="text-align: center">
-        <div style="display: inline-block">
+      <ion-scroll scrollX  style=" height:100px" >
+          <ion-row nowrap class="headerChip" dragula="COPYABLE" id="left">
+              <div class="my-button" style="display: inline-block">
+                <button ion-fab >x</button>
+              </div>
+              <div class="my-button" style="display: inline-block">
+                <button ion-fab color ="secondary">O</button>
+              </div>
+              <div class="my-button" style="display: inline-block">
+                <button ion-fab  color="danger">X</button>
+              </div>
+              <div class="my-button" style="display: inline-block">
+                <button ion-fab  outline color="danger">X</button>
+              </div>
+              <div class="my-button" style="display: inline-block">
+                <button ion-fab  color="light">■</button>
+              </div>
+              <div class="my-button" style="display: inline-block">
+                <button ion-fab  color="dark">●</button>
+              </div>
+            
+            <!-- <ion-chip> -->
+                <!-- <ion-label>zxczcxzczxcz</ion-label> -->
+                <!-- <button ion-fab  color="danger" style="display: inline-block;">
+                    X
+                </button> -->
+
+            <!-- </ion-chip> -->
+            
+            
+       
+
+          </ion-row>
+        </ion-scroll>
+
+
+    <!-- <div class='container' dragula="COPYABLE" id="left" style=" position: relative; text-align: center">
+        <div style="top: 0px; left:0px; display: inline-block; position: absolute">
           <button ion-fab color ="secondary">O</button>
         </div>
         <div style="display: inline-block">
@@ -46,13 +82,11 @@
         <div style="display: inline-block">
           <button ion-fab  color="dark">●</button>
         </div>
+    </div> -->
+
+    <div class='container' dragula="COPYABLE" id="right" style=" position: relative; min-height: 200px; background: pink">
     </div>
 
-    <div class='container' dragula="COPYABLE" id="right" style="min-height: 200px; background: pink">
-        
-    </div>
-  <!-- </ion-grid> -->
 
- 
   
 </ion-content>

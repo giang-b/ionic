@@ -13,9 +13,14 @@ export class HomePage implements OnDestroy{
     
     dragulaService.createGroup('COPYABLE', {
       copy: (el, source) => {
+        el.id = "zxczxczxcz";
         return source.id === 'left';
       },
       accepts: (el, target, source, sibling) => {
+        console.log(el);
+        console.log(target);
+        console.log(source);
+        console.log(sibling);
         // To avoid dragging from right to left container
         return target.id !== 'left';
       }
